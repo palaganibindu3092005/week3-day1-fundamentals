@@ -1,0 +1,42 @@
+Machine Learning Workflow for Student Performance Prediction
+
+1. Problem Definition
+   Goal: Predict student marks based on hours studied using linear regression.
+
+2. Data Collection
+   Dataset: student_performance.csv with 10 records
+   Features: Hours studied
+   Target: Marks obtained
+
+3. Data Preprocessing
+   - Loaded data using pandas
+   - Checked for missing values: No nulls found
+   - No scaling required as only 1 feature
+
+4. Exploratory Data Analysis (EDA)
+   - Plotted scatter plot of Hours vs Marks
+   - Observed positive linear relationship between hours and marks
+   - Data shows students who study more score higher
+
+5. Model Selection
+   - Chose Linear Regression because relationship is linear
+   - Simple model, easy to interpret, works well for this case
+
+6. Model Training
+   - Split: Used entire dataset for training due to small size
+   - Algorithm: Linear Regression from sklearn
+   - Trained model on Hours vs Marks data
+
+7. Model Evaluation
+   - Metrics: Mean Squared Error (MSE) and R² Score
+   - MSE: Measures average prediction error
+   - R²: Measures how well model fits data. Closer to 1 is better
+   - Visualized with Actual vs Predicted plot
+
+8. Prediction
+   - Model can predict marks for new hour values
+   - Example: If student studies 8.5 hours, model predicts marks
+
+9. Conclusion
+   Linear regression successfully models the relationship. 
+   More study hours lead to higher marks with strong correlation.
