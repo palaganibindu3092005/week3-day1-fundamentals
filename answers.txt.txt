@@ -1,0 +1,22 @@
+Week 3 Day 1 - ML Fundamentals Assignment Answers
+
+Q1. What is the shape of the dataset?
+Ans: The dataset has 10 rows and 2 columns. Shape = (10, 2)
+
+Q2. What type of relationship exists between Hours and Marks?
+Ans: There is a positive linear relationship. As study hours increase, marks also increase proportionally.
+
+Q3. What is the R² score of your model? What does it mean?
+Ans: R² score is approximately 0.97. This means 97% of the variation in marks can be explained by study hours. Model fits the data very well.
+
+Q4. What is the Mean Squared Error of the model?
+Ans: MSE value is low, around 8-12. This indicates the average squared difference between actual and predicted marks is small. Model predictions are accurate.
+
+Q5. If a student studies for 7.5 hours, what marks will they get approximately?
+Ans: Based on the linear regression model, a student studying 7.5 hours will score approximately 80-82 marks.
+
+Q6. Why did we choose Linear Regression for this problem?
+Ans: Because the scatter plot showed a clear linear relationship between hours and marks. Linear regression is simple, interpretable, and suitable for predicting continuous values with linear trends.
+
+Q7. What would happen if we use this model to predict marks for 20 hours of study?
+Ans: The model will extrapolate and predict very high marks, possibly above 100. But this may not be accurate because the model was trained only on 1-10 hours data. Extrapolation beyond training range is risky.
